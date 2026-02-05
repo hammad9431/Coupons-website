@@ -32,101 +32,96 @@ function Navbar() {
       
       <header   ref={navRef}
        className="fixed top-0 w-full  bg-white z-50 border-b ">
-        <div className=" max-w-350 mx-auto px-4 h-24 flex items-center">
+        <div className=" max-w-350 mx-auto px-4 h-24 flex items-center ">
          <img src={logo} alt="logo" className="h-11" />
 
-          {/* LEFT */}
-          <div className="flex items-center mx-auto xl:ml-44 lg:ml-20 gap-8 ">
-           
-            {/* DESKTOP MENU */}
-            <ul className="hidden lg:flex items-center gap-4 text-lg text-gray-800">
+     <div className="flex-1 flex justify-center xl:ml-24">
+  <ul className="hidden lg:flex items-center gap-4 text-lg text-gray-800">
 
-              {/* CATEGORIES */}
-   <li className="relative">
-  <button
-    onClick={() => { setOpenCategories(!openCategories); setOpenCategories2(false); }}
-    className="flex items-center gap-1 cursor-pointer hover:text-blue-600 "
-  >
-    Categories
-    { !openCategories && <span className="absolute -top-3 -right-3 bg-red-500 text-white text-[10px] px-3 py-0.5 rounded-full">
-      New
-    </span> }
+    {/* Categories */}
+    <li className="relative">
+      <button
+        onClick={() => {
+          setOpenCategories(!openCategories);
+          setOpenCategories2(false);
+        }}
+        className="flex items-center gap-1 hover:text-blue-600"
+      >
+        Categories
+        {!openCategories && (
+          <span className="absolute -top-3 -right-3 bg-red-500 text-white text-[10px] px-2 py-0.5 rounded-full">
+            New
+          </span>
+        )}
+        <svg
+          className={`w-4 h-4 transition-transform ${
+            openCategories ? "rotate-180" : ""
+          }`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </li>
 
-    {/* Dropdown Arrow */}
-    <svg
-      className={`w-4 h-4 transition-transform ${
-        openCategories ? "rotate-180" : ""
-      }`}
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M19 9l-7 7-7-7"
-      />
-    </svg>
-  </button>
-</li>
+    <li className="hover:text-blue-600 cursor-pointer">Places</li>
+    <li className="hover:text-blue-600 cursor-pointer">Events</li>
 
-
-              <li className="cursor-pointer hover:text-blue-600 ">Places</li>
-              <li className="cursor-pointer hover:text-blue-600 ">Events</li>
-              <li className="cursor-pointer hover:text-blue-600 ">
-                 <button
-    onClick={() => { setOpenCategories2(!openCategories2); setOpenCategories(false); }}
-    className="flex items-center gap-1 cursor-pointer"
-  >
-    Vendor
-   
-
-    {/* Dropdown Arrow */}
-    <svg
-      className={`w-4 h-4 transition-transform ${
-        openCategories2 ? "rotate-180" : ""
-      }`}
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M19 9l-7 7-7-7"
-      />
-    </svg>
-  </button>
-                </li>
-            </ul>
-          </div>
-
-          {/* SEARCH */}
-          <div className="hidden xl:flex mx-auto xl:-ml-2">
-          <div className="hidden xl:flex items-center border border-gray-300 rounded-full  w-50 bg-white shadow-sm">
-            <input
-              type="text"
-              placeholder="Search"
-              className="flex-1 outline-none text-sm py-2 ml-2"
-            />
-        <MdOutlineSearch size={20} className="text-gray-500 shrink-0 -ml-4" />
-          </div>
+    <li>
+      <button
+        onClick={() => {
+          setOpenCategories2(!openCategories2);
+          setOpenCategories(false);
+        }}
+        className="flex items-center gap-1 hover:text-blue-600"
+      >
+        Vendor
+        <svg
+          className={`w-4 h-4 transition-transform ${
+            openCategories2 ? "rotate-180" : ""
+          }`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </li>
+  </ul>
 </div>
-          {/* RIGHT */}
-          <div className="hidden lg:flex items-center gap-12">
-           <Link to="/signin" >
-    <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-sm 
+
+
+<div className="hidden xl:flex justify-center ">
+  <div className="flex items-center border border-gray-300 rounded-full w-[260px] bg-white shadow-sm">
+    <input
+      type="text"
+      placeholder="Search"
+      className="flex-1 outline-none text-sm py-2 px-3"
+    />
+    <MdOutlineSearch size={20} className="text-gray-500 mr-3" />
+  </div>
+</div>
+
+
+<div className="hidden lg:flex items-center gap-6 flex-1 justify-end">
+  <Link to="/signin">
+    <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-sm
       hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600">
       Sign In
     </button>
   </Link>
-            <button className="border border-orange-500 text-black px-5 py-2 rounded-lg text-lg hover:text-blue-600 cursor-pointer">
-              Create Account
-            </button>
-          
-          </div>
+
+  <button className="border border-orange-500 text-black px-5 py-2 rounded-lg text-lg hover:text-blue-600">
+    Create Account
+  </button>
+</div>
+
+
+          {/* RIGHT */}
+         
 
           {/* MOBILE ICON */}
           <button className="lg:hidden text-blue-600" onClick={() => setOpenMenu(!openMenu)}>
@@ -141,7 +136,7 @@ function Navbar() {
       </div>
      
        {openCategories && (
-<div className="top-full -mt-11 w-max md:hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
+<div className="top-full -mt-11 w-max md:hidden hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
   <div className="max-w-300 mx-auto py-4 px-6">
     <div className="grid grid-cols-3  text-md text-left">
 
