@@ -18,11 +18,16 @@ import { FaInstagramSquare } from "react-icons/fa";
               <li className="cursor-pointer hover:text-blue-600 ">pricing/plans</li>
             </ul>
 
-        <div className="flex text-blue-600 px-8 cursor-pointer text-3xl  gap-2 mx-auto md:mx-0">
-                   <CiFacebook />
+        <div className="flex text-gray-600 px-8 cursor-pointer text-3xl gap-4 mx-auto md:mx-0">
+                   <span className="hover:text-[#1877F2] transition-colors">
+                     <CiFacebook />
+                   </span>
+                   <span className="hover:text-[#1DA1F2] transition-colors">
                      <CiTwitter />
+                   </span>
+                   <span className="hover:text-[#E4405F] transition-colors">
                      <FaInstagramSquare />
-                     
+                   </span>
             </div>
    </div>                 
                   
@@ -39,20 +44,20 @@ import { FaInstagramSquare } from "react-icons/fa";
             </p>
 
             {/* Social Icons */}
-            <div className="flex -mt-2 lg:text-3xl xl:text-3xl text-3xl md:text-xl xl:px-8   gap-2 mx-auto md:mx-0">
-              <span className="  text-gray-600 hover:text-blue-600 cursor-pointer">
+            <div className="flex -mt-2 lg:text-3xl xl:text-3xl text-3xl md:text-xl xl:px-8 gap-4 mx-auto md:mx-0">
+              <span className="text-gray-600 hover:text-[#1877F2] cursor-pointer transition-colors">
                 <FaFacebookF />
               </span>
-              <span className="  text-gray-600 hover:text-blue-600 cursor-pointer">
+              <span className="text-gray-600 hover:text-[#1DA1F2] cursor-pointer transition-colors">
                 <FaTwitter />
               </span>
-              <span className=" text-gray-600 hover:text-blue-600 cursor-pointer">
+              <span className="text-gray-600 hover:text-[#E4405F] cursor-pointer transition-colors">
                 <FaInstagram />
               </span>
-               <span className="  text-gray-600 hover:text-blue-600 cursor-pointer">
+               <span className="text-gray-600 hover:text-[#1DA1F2] cursor-pointer transition-colors">
                 <FaTwitter />
               </span>
-               <span className="  text-gray-600 hover:text-blue-600 cursor-pointer">
+               <span className="text-gray-600 hover:text-[#E4405F] cursor-pointer transition-colors">
                 <FaInstagram />
               </span>
             </div>
@@ -61,36 +66,36 @@ import { FaInstagramSquare } from "react-icons/fa";
           {/* Vendors */}
           <div className="text-center md:text-left">
             <h3 className="font-semibold mb-3">Vendors</h3>
-            <ul className="space-y-2 text-gray-600 text-sm">
-              <li>Add a Place</li>
-              <li>Create a Promo</li>
-              <li>Add an Event</li>
-              <li>Advertise with us</li>
-              <li>Post Requirements</li>
+            <ul className="space-y-2 text-gray-600 text-sm cursor-pointer ">
+              <li className="hover:text-blue-600 transition-colors">Add a Place</li>
+              <li className="hover:text-blue-600 transition-colors">Create a Promo</li>
+              <li className="hover:text-blue-600 transition-colors">Add an Event</li>
+              <li className="hover:text-blue-600 transition-colors">Advertise with us</li>
+              <li className="hover:text-blue-600 transition-colors">Post Requirements</li>
             </ul>
           </div>
 
           {/* Explore */}
           <div className="text-center md:text-left">
             <h3 className="font-semibold mb-3">Explore</h3>
-            <ul className="space-y-2 text-gray-600 text-sm">
-              <li>FAQs</li>
-              <li>Coupons on the Map</li>
-              <li>Places on the Map</li>
-              <li>Events on the Map</li>
-              <li>Our Blog</li>
+            <ul className="space-y-2 text-gray-600 text-sm cursor-pointer">
+              <li className="hover:text-blue-600 transition-colors">FAQs</li>
+              <li className="hover:text-blue-600 transition-colors">Coupons on the Map</li>
+              <li className="hover:text-blue-600 transition-colors">Places on the Map</li>
+              <li className="hover:text-blue-600 transition-colors">Events on the Map</li>
+              <li className="hover:text-blue-600 transition-colors">Our Blog</li>
             </ul>
           </div>
 
           {/* Company */}
           <div className="text-center md:text-left">
             <h3 className="font-semibold mb-3">Company</h3>
-            <ul className="space-y-2 text-gray-600 text-sm">
-              <li>About Us</li>
-              <li>For Partners</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Contact Us</li>
+            <ul className="space-y-2 text-gray-600 text-sm cursor-pointer">
+              <li className="hover:text-blue-600 transition-colors">About Us</li>
+              <li className="hover:text-blue-600 transition-colors">For Partners</li>
+              <li className="hover:text-blue-600 transition-colors">Terms & Conditions</li>
+              <li className="hover:text-blue-600 transition-colors">Privacy Policy</li>
+              <li className="hover:text-blue-600 transition-colors">Contact Us</li>
             </ul>
           </div>
 

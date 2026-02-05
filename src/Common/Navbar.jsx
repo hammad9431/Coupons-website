@@ -45,7 +45,7 @@ function Navbar() {
           setOpenCategories(!openCategories);
           setOpenCategories2(false);
         }}
-        className="flex items-center gap-1 hover:text-blue-600"
+        className="flex items-center gap-1 hover:text-blue-600 cursor-pointer"
       >
         Categories
         {!openCategories && (
@@ -75,7 +75,7 @@ function Navbar() {
           setOpenCategories2(!openCategories2);
           setOpenCategories(false);
         }}
-        className="flex items-center gap-1 hover:text-blue-600"
+        className="flex items-center gap-1 hover:text-blue-600 cursor-pointer"
       >
         Vendor
         <svg
@@ -95,7 +95,7 @@ function Navbar() {
 
 
 <div className="hidden xl:flex justify-center ">
-  <div className="flex items-center border border-gray-300 rounded-full w-[260px] bg-white shadow-sm">
+  <div className="flex items-center border border-gray-300 rounded-full w-65 bg-white shadow-sm">
     <input
       type="text"
       placeholder="Search"
@@ -109,12 +109,12 @@ function Navbar() {
 <div className="hidden lg:flex items-center gap-6 flex-1 justify-end">
   <Link to="/signin">
     <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-sm
-      hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600">
+     cursor-pointer hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600">
       Sign In
     </button>
   </Link>
 
-  <button className="border border-orange-500 text-black px-5 py-2 rounded-lg text-lg hover:text-blue-600">
+  <button className="border border-orange-500 text-black px-5 py-2 rounded-lg text-lg hover:text-blue-600 cursor-pointer">
     Create Account
   </button>
 </div>
@@ -128,11 +128,11 @@ function Navbar() {
             {openMenu ? <HiMenu size={26} /> : <HiMenu size={26} />}
           </button>
         </div>
-<div className="h-12 px-4 w-full bg-blue-600 text-center text-white hidden lg:flex items-center justify-end gap-2 text-2xl">
-       <CiFacebook />
-       <CiTwitter />
-       <FaInstagramSquare />
-       <FaLinkedin />
+<div className="h-12 px-4 w-full bg-blue-600 text-center text-white hidden lg:flex items-center justify-end gap-4 text-2xl cursor-pointer">
+       <CiFacebook className="hover:text-[#1877F2] transition-colors" />
+       <CiTwitter className="hover:text-[#1DA1F2] transition-colors" />
+       <FaInstagramSquare className="hover:text-[#E4405F] transition-colors" />
+       <FaLinkedin className="hover:text-[#0A66C2] transition-colors" />
       </div>
      
        {openCategories && (
@@ -238,7 +238,7 @@ function Navbar() {
                   
 
      
-        <li>Restaurants and Food Delivery</li>
+        <li>Restaurants and Food Delivery.......</li>
         <li>Entertainment</li>
         <li>Sports and Fitness</li>
         <li>Clothing and Fashion</li>
@@ -301,10 +301,10 @@ function Navbar() {
             </ul>
            
               <div className="mt-4 text-white flex items-center justify-center gap-2 text-xl py-2">
-                <CiFacebook />
-                <CiTwitter />
-                <FaInstagramSquare />
-                <FaLinkedin />
+                <CiFacebook className="hover:text-[#1877F2] transition-colors" />
+       <CiTwitter className="hover:text-[#1DA1F2] transition-colors" />
+       <FaInstagramSquare className="hover:text-[#E4405F] transition-colors" />
+       <FaLinkedin className="hover:text-[#0A66C2] transition-colors" />
               </div>
            
           </div>
