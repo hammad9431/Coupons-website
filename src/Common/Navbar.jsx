@@ -1,0 +1,325 @@
+import { useState,useRef, useEffect } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
+import { MdOutlineSearch } from "react-icons/md";
+import logo from "../assets/images/logo.png";
+import { CiFacebook ,CiTwitter  } from "react-icons/ci";
+import { FaInstagramSquare,FaLinkedin } from "react-icons/fa";
+import { GoPeople } from "react-icons/go";
+import { Link } from "react-router-dom";
+function Navbar() {
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openCategories, setOpenCategories] = useState(false);
+  const [openCategories2, setOpenCategories2] = useState(false);
+     
+  const navRef = useRef(null);
+
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setOpenCategories(false);
+        setOpenCategories2(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () =>
+      document.removeEventListener("mousedown", handleOutsideClick);
+  }, []);
+     
+  return (
+    <>
+      
+      <header   ref={navRef}
+       className="fixed top-0 w-full  bg-white z-50 border-b ">
+        <div className=" max-w-350 mx-auto px-4 h-24 flex items-center">
+         <img src={logo} alt="logo" className="h-11" />
+
+          {/* LEFT */}
+          <div className="flex items-center mx-auto xl:ml-44 lg:ml-20 gap-8 ">
+           
+            {/* DESKTOP MENU */}
+            <ul className="hidden lg:flex items-center gap-4 text-lg text-gray-800">
+
+              {/* CATEGORIES */}
+   <li className="relative">
+  <button
+    onClick={() => { setOpenCategories(!openCategories); setOpenCategories2(false); }}
+    className="flex items-center gap-1 cursor-pointer hover:text-blue-600 "
+  >
+    Categories
+    { !openCategories && <span className="absolute -top-3 -right-3 bg-red-500 text-white text-[10px] px-3 py-0.5 rounded-full">
+      New
+    </span> }
+
+    {/* Dropdown Arrow */}
+    <svg
+      className={`w-4 h-4 transition-transform ${
+        openCategories ? "rotate-180" : ""
+      }`}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
+</li>
+
+
+              <li className="cursor-pointer hover:text-blue-600 ">Places</li>
+              <li className="cursor-pointer hover:text-blue-600 ">Events</li>
+              <li className="cursor-pointer hover:text-blue-600 ">
+                 <button
+    onClick={() => { setOpenCategories2(!openCategories2); setOpenCategories(false); }}
+    className="flex items-center gap-1 cursor-pointer"
+  >
+    Vendor
+   
+
+    {/* Dropdown Arrow */}
+    <svg
+      className={`w-4 h-4 transition-transform ${
+        openCategories2 ? "rotate-180" : ""
+      }`}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
+                </li>
+            </ul>
+          </div>
+
+          {/* SEARCH */}
+          <div className="hidden xl:flex mx-auto xl:-ml-2">
+          <div className="hidden xl:flex items-center border border-gray-300 rounded-full  w-50 bg-white shadow-sm">
+            <input
+              type="text"
+              placeholder="Search"
+              className="flex-1 outline-none text-sm py-2 ml-2"
+            />
+        <MdOutlineSearch size={20} className="text-gray-500 shrink-0 -ml-4" />
+          </div>
+</div>
+          {/* RIGHT */}
+          <div className="hidden lg:flex items-center gap-12">
+           <Link to="/signin" >
+    <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-sm 
+      hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600">
+      Sign In
+    </button>
+  </Link>
+            <button className="border border-orange-500 text-black px-5 py-2 rounded-lg text-lg hover:text-blue-600 cursor-pointer">
+              Create Account
+            </button>
+          
+          </div>
+
+          {/* MOBILE ICON */}
+          <button className="lg:hidden text-blue-600" onClick={() => setOpenMenu(!openMenu)}>
+            {openMenu ? <HiMenu size={26} /> : <HiMenu size={26} />}
+          </button>
+        </div>
+<div className="h-12 px-4 w-full bg-blue-600 text-center text-white hidden lg:flex items-center justify-end gap-2 text-2xl">
+       <CiFacebook />
+       <CiTwitter />
+       <FaInstagramSquare />
+       <FaLinkedin />
+      </div>
+     
+       {openCategories && (
+<div className="top-full -mt-11 w-max md:hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
+  <div className="max-w-300 mx-auto py-4 px-6">
+    <div className="grid grid-cols-3  text-md text-left">
+
+      <ul >
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3] ">Restaurants and Food Delivery</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Entertainment</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Sports and Fitness</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Clothing and Fashion</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Home Improvement</li>
+      </ul>
+
+      <ul className="border-l border-white/40 ">
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Services</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Theater and Cinema</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Gadgets and Electronics</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Health and Wellness</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">General Merchandize</li>
+      </ul>
+
+      <ul className="border-l border-white/40 ">
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Tourism and Hospitality</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Education</li>
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3]">Transport</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+)}
+
+{openCategories2 && (
+  <div className="top-full -mt-11 ml-20 w-max md:hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
+    <ul className="py-6 ">
+      <li className="h-10 w-full  items-center px-8 cursor-pointer hover:bg-[#1746d3] hidden xl:inline lg:inline md:hidden">
+        Login
+      </li>
+    </ul>
+  </div>
+)}
+
+
+     
+        {openMenu && (
+          <div className="lg:hidden relative bg-[#3965e5] px-6 py-4 border-t">
+            <div className="mt-4 flex flex-row gap-3">
+              <Link to="/signin" >
+              <button onClick={() => setOpenMenu(false)} className="flex shadow-2xl gap-2 bg-[#4571f1] text-white md:px-8 md:py-2 px-4 py-3 rounded-lg ">
+               <GoPeople className=" text-white text-md mt-1" />  Sign In
+              </button>
+              </Link>
+              <button className="text-white bg-[rgba(246,194,62,1)] md:py-3  md:px-6 px-4 rounded-lg">
+                Create Account
+              </button>
+            </div>
+          <hr className="border-t border-white my-4" />
+
+ 
+          <div className=" items-center  rounded-md px-4 py-2 w-full my-4 bg-white">
+            <input
+              type="text"
+              placeholder="Search"
+              className="flex-1 outline-none text-md"
+            />
+          </div>
+
+
+            <button onClick={() => setOpenMenu(false)} className="absolute md:top-2 top-1 md:right-4 right-2 text-white">
+              <HiX  className="text-3xl md:text-4xl"/>
+            </button>
+            <ul className="flex flex-col gap-4 text-md text-white">
+              <li>
+                <button
+    onClick={() => { setOpenCategories(!openCategories); setOpenCategories2(false); }}
+    className="flex items-center gap-1 cursor-pointer"
+  >
+    Categories
+
+    {/* Dropdown Arrow */}
+    <svg
+      className={`w-4 h-4 transition-transform ${
+        openCategories ? "rotate-180" : ""
+      }`}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
+
+   {openCategories && (
+                <ul className="ml-12 space-y-2 text-sm overflow-y-auto max-h-40">
+                  
+
+     
+        <li>Restaurants and Food Delivery</li>
+        <li>Entertainment</li>
+        <li>Sports and Fitness</li>
+        <li>Clothing and Fashion</li>
+        <li>Home Improvement</li>
+    
+
+     
+        <li>Services</li>
+        <li>Theater and Cinema</li>
+        <li>Gadgets and Electronics</li>
+        <li>Health and Wellness</li>
+        <li>General Merchandize</li>
+     
+
+     
+        <li>Tourism and Hospitality</li>
+        <li>Education</li>
+        <li>Transport</li>
+      
+
+   
+
+                </ul>
+              )}
+              </li>
+              <li>Places</li>
+              <li>Events</li>
+              <li>
+                 <button
+    onClick={() => { setOpenCategories2(!openCategories2); setOpenCategories(false); }}
+    className="flex items-center gap-1 cursor-pointer"
+  >
+    Vendor
+   
+
+    {/* Dropdown Arrow */}
+    <svg
+      className={`w-4 h-4 transition-transform ${
+        openCategories2 ? "rotate-180" : ""
+      }`}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
+              </li>
+              {openCategories2 && (
+                <ul className="ml-12 space-y-2 text-sm">
+                  <li>Login</li>
+                </ul>
+              )}
+  
+            </ul>
+           
+              <div className="mt-4 text-white flex items-center justify-center gap-2 text-xl py-2">
+                <CiFacebook />
+                <CiTwitter />
+                <FaInstagramSquare />
+                <FaLinkedin />
+              </div>
+           
+          </div>
+        )}
+      
+
+      
+      </header>
+    </>
+  );
+}
+
+export default Navbar;
