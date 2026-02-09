@@ -6,14 +6,14 @@ function ImageSection() {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat py-10 md:py-20 lg:mt-36 mt-24"
+        className="bg-cover bg-center bg-no-repeat xl:py-10 lg:py-6  lg:mt-36 mt-24"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
 
             <div className="w-full md:w-1/2 text-center md:text-left order-1 md:order-1">
-              <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+              <h1 className="text-3xl md:text-4xl md:mt-6 mt-6 lg:mt-0 font-bold text-gray-800 mb-4">
                 Discover And Save Free Coupon Deals Now
               </h1>
               <p className="text-gray-600 mb-6">
@@ -29,7 +29,7 @@ function ImageSection() {
       <input
         type="tel"
         placeholder="Enter your PHONE number here..."
-        className="w-full py-4 outline-none text-sm text-gray-700 placeholder-gray-400"
+        className=" w-full py-4 outline-none text-sm text-gray-700 placeholder-gray-400"
       />
     </div>
     <button className="bg-blue-600  transition text-white px-10 py-6 text-sm font-medium
