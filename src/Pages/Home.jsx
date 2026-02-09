@@ -7,6 +7,7 @@ function Home() {
    <>
    <ImageSection/>
    <DealsSection/>
+   
   {/* <Pixelperfect/> */}
    </>
   )

@@ -7,6 +7,7 @@ import { FaInstagramSquare,FaLinkedin } from "react-icons/fa";
 import { GoPeople } from "react-icons/go";
 import { Link } from "react-router-dom";
 function Navbar() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
   const [openCategories, setOpenCategories] = useState(false);
   const [openCategories2, setOpenCategories2] = useState(false);
@@ -114,11 +115,58 @@ function Navbar() {
     </button>
   </Link>
 
-  <button className="border border-orange-500 text-black px-5 py-2 rounded-lg text-lg hover:text-blue-600 cursor-pointer">
+  <button  onClick={() => setIsModalOpen(true)}
+  className="border border-orange-500 text-black px-5 py-2 rounded-lg text-lg hover:text-blue-600 cursor-pointer">
     Create Account
   </button>
 </div>
+                    {/* Modal */}
 
+         {isModalOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 bg-opacity-50 flex items-center justify-center z-50"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <div 
+            className="bg-white rounded-lg p-8 max-w-md w-full mx-4 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            
+            <button 
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-6 right-6 text-gray-500 hover:text-blue-500 text-2xl cursor-pointer"
+            >
+              ×
+            </button>
+          
+            {/* Modal Content */}
+            <h2 className="lg:text-xl font-bold mb-4">How would you like to get started?</h2>
+             <hr className="text-gray-300"/>
+           
+             
+              <Link
+  to="/Signup"
+  onClick={() => setIsModalOpen(false)}
+  className="mt-6 block w-full text-center text-white bg-blue-600 py-3 rounded-md 
+  hover:bg-white hover:text-blue-600 hover:border border-blue-600 transition-colors"
+>
+  I'm looking for coupons and details
+</Link>
+
+
+
+              <Link
+  to="/SignupBusiness"
+  onClick={() => setIsModalOpen(false)}
+  className="mt-3 block w-full text-center text-black border border-orange-500 
+  py-3 rounded-md hover:bg-orange-50 transition-colors"
+>
+  I want to promote my business
+</Link>
+
+          </div>
+        </div>
+      )}
 
           {/* RIGHT */}
          
@@ -188,9 +236,12 @@ function Navbar() {
                <GoPeople className=" text-white text-md mt-1" />  Sign In
               </button>
               </Link>
-              <button className="text-white bg-[rgba(246,194,62,1)] md:py-3  md:px-6 px-4 rounded-lg">
+              <Link to="/signup">
+              <button onClick={() => {setOpenMenu(false); setIsModalOpen(true);}}
+              className="text-white bg-[rgba(246,194,62,1)] py-3  md:px-6 px-4 rounded-lg">
                 Create Account
               </button>
+              </Link>
             </div>
           <hr className="border-t border-white my-4" />
 
@@ -238,7 +289,7 @@ function Navbar() {
                   
 
      
-        <li>Restaurants and Food Delivery.......</li>
+        <li>Restaurants and Food Delivery</li>
         <li>Entertainment</li>
         <li>Sports and Fitness</li>
         <li>Clothing and Fashion</li>

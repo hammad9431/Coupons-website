@@ -6,8 +6,8 @@ import Footer from './Common/Footer'
 import Navbar from './Common/Navbar'
 import Home from './Pages/Home'
 import SignIn from './Components/SignIn'
-
-
+import Signup from './Components/Signup'
+import SignupBusiness from './Components/SignupBusiness'
 function App() {
  
 
@@ -19,6 +19,8 @@ function App() {
     <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/signin" element={<SignIn/>} />
+<Route path="/signup" element={<Signup/>} />
+<Route path="/SignupBusiness" element={<SignupBusiness/>} />
     </Routes>
      <Footer/>
     </BrowserRouter>
