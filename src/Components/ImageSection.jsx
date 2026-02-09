@@ -13,10 +13,10 @@ function ImageSection() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
 
             <div className="w-full md:w-1/2 text-center md:text-left order-1 md:order-1">
-              <h1 className="text-3xl md:text-4xl md:mt-6 mt-6 lg:mt-0 font-bold text-gray-800 mb-4">
+              <h1 className="text-3xl md:text-5xl md:mt-6 mt-6 lg:mt-0 font-bold text-gray-800 mb-4">
                 Discover And Save Free Coupon Deals Now
               </h1>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 text-xl">
                 Join here to see today's amazing secret deals in all categories from food,
                 electronics, hair & beauty and many more.
               </p>

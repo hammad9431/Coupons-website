@@ -46,7 +46,7 @@ import { IoIosMailOpen } from "react-icons/io";
             </p>
 
             {/* Social Icons */}
-            <div className="border flex -mt-2 lg:text-3xl xl:text-3xl text-3xl md:text-xl xl:px-4 gap-4 mx-auto md:mx-0">
+            <div className=" flex -mt-2 lg:text-3xl xl:text-3xl text-3xl md:text-xl xl:px-4 gap-4 mx-auto md:mx-0">
               <span className="text-gray-600 hover:text-[#1877F2] cursor-pointer transition-colors">
                 <FaFacebookF />
               </span>

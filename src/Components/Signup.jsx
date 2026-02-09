@@ -45,7 +45,7 @@
           />
 
           {/* Remember me */}
-          <div className="flex items-center gap-2 text-sm text-gray-600">
+          <div className="px-4 md:px-2 flex items-center gap-2 text-sm text-gray-600">
             <input type="checkbox" />
             <label>Remember me</label>
           </div>

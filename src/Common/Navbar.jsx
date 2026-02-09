@@ -155,7 +155,7 @@ function Navbar() {
 
 
 
-              <Link
+    <Link
   to="/SignupBusiness"
   onClick={() => setIsModalOpen(false)}
   className="mt-3 block w-full text-center text-black border border-orange-500 
@@ -216,14 +216,7 @@ function Navbar() {
 
 )}
 
-{/* {openCategories2 && (
-  <div className="top-full -mt-11 ml-12 w-max md:hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
-    <ul className="py-6 ">
-      <li className="h-8 w-full  items-center px-8 cursor-pointer hover:bg-[#1746d3] hidden xl:inline lg:inline md:hidden">
-        Login
-      </li>
-    </ul>
-  </div> */}
+
 
     {openCategories2 && (
 <div className="top-full -mt-11 w-max md:hidden hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
@@ -249,12 +242,10 @@ function Navbar() {
                <GoPeople className=" text-white text-md mt-1" />  Sign In
               </button>
               </Link>
-              <Link to="/signup">
               <button onClick={() => {setOpenMenu(false); setIsModalOpen(true);}}
               className="text-white bg-[rgba(246,194,62,1)] py-3  md:px-6 px-4 rounded-lg">
                 Create Account
               </button>
-              </Link>
             </div>
           <hr className="border-t border-white my-4" />
 
