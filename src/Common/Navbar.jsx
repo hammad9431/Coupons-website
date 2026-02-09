@@ -216,14 +216,27 @@ function Navbar() {
 
 )}
 
-{openCategories2 && (
-  <div className="top-full -mt-11 ml-20 w-max md:hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
+{/* {openCategories2 && (
+  <div className="top-full -mt-11 ml-12 w-max md:hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
     <ul className="py-6 ">
-      <li className="h-10 w-full  items-center px-8 cursor-pointer hover:bg-[#1746d3] hidden xl:inline lg:inline md:hidden">
+      <li className="h-8 w-full  items-center px-8 cursor-pointer hover:bg-[#1746d3] hidden xl:inline lg:inline md:hidden">
         Login
       </li>
     </ul>
-  </div>
+  </div> */}
+
+    {openCategories2 && (
+<div className="top-full -mt-11 w-max md:hidden hidden xl:inline lg:inline bg-[#4776ff] text-white z-40 left-1/2 -translate-x-1/2 absolute">
+  <div className="max-w-300 mx-auto py-4 px-2">
+   
+
+      <ul >
+        <li className="w-full flex items-center py-2 px-4 cursor-pointer hover:bg-[#1746d3] ">Login</li>
+       
+      </ul>
+      </div>
+      </div>
+    
 )}
 
 
