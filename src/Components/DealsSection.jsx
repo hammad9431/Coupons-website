@@ -17,7 +17,7 @@ import Resturantimage2 from '../assets/images/WhatsApp Image 2024-06-14 at 1.23.
 import Resturantimage3 from '../assets/images/WhatsApp Image 2024-08-26 at 2.30.48 PM.jpg';
 import Resturantimage4 from '../assets/images/WhatsApp Image 2024-07-15 at 12.04.44 PM.jpg';
 import Resturantimage5 from '../assets/images/WhatsApp Image 2024-06-12 at 3.30.54 PM.jpg';
-import Resturantimage6 from '../assets/images/WhatsApp Image 2024-06-12 at 3.30.54 PM.jpg';
+import Resturantimage6 from '../assets/images/krave logo.jpg';
 import Resturantimage7 from '../assets/images/ama.jpg';
 import Resturantimage8 from '../assets/images/choco logo.jpg';
 
@@ -40,6 +40,42 @@ import Clothingimage3 from '../assets/images/gp logo.jpg';
 import Clothingimage4 from '../assets/images/WhatsApp Image 2024-02-08 at 3.58.25 PM.jpg';
 import Clothingimage5 from '../assets/images/WhatsApp Image 2024-02-07 at 7.18.01 PM.jpg';
 import Clothingimage6 from '../assets/images/WhatsApp Image 2024-01-18 at 10.27.16 PM.jpg';
+
+import Homeimage1 from '../assets/images/WhatsApp Image 2024-07-10 at 4.32.59 PM.jpg';
+import Homeimage2 from '../assets/images/WhatsApp Image 2024-06-04 at 2.11.02 PM.jpg';
+import Homeimage3 from '../assets/images/WhatsApp Image 2024-07-10 at 5.53.53 PM.jpg';
+import Homeimage4 from '../assets/images/WhatsApp Image 2024-07-30 at 7.01.07 PM.jpg';
+
+import Servicesimage1 from '../assets/images/ash.jpg';
+import Servicesimage2 from '../assets/images/WhatsApp Image 2024-08-09 at 5.17.00 PM.jpg';
+
+import Theaterimage1 from '../assets/images/ramanus.jpg';
+import Theaterimage2 from '../assets/images/ae.jpg';
+import Theaterimage3 from '../assets/images/WhatsApp Image 2024-09-10 at 12.19.24 PM.jpg';
+import Theaterimage4 from '../assets/images/WhatsApp Image 2024-09-10 at 10.49.12 AM.jpg';
+
+import Electronicsimage1 from '../assets/images/ELG LOGO.jpg';
+import Electronicsimage2 from '../assets/images/WhatsApp Image 2024-01-31 at 10.51.52 AM.jpg';
+
+
+import Healthimage1 from '../assets/images/WhatsApp Image 2024-02-14 at 10.47.41 PM.jpg';
+import Healthimage2 from '../assets/images/Belz logo.jpg';
+import Healthimage3 from '../assets/images/AA1.jpg';
+
+
+
+import Tourismimage1 from '../assets/images/bb6.jpg';
+import Tourismimage2 from '../assets/images/roots.jpg';
+import Tourismimage3 from '../assets/images/asun.jpg';
+import Tourismimage4 from '../assets/images/WhatsApp Image 2023-12-21 at 9.46.39 AM.jpg';
+
+import generalimage1 from '../assets/images/WhatsApp Image 2024-02-17 at 10.45.42 AM.jpg';
+import generalimage2 from '../assets/images/lala logo.jpg';
+
+import Educationimage1 from '../assets/images/NNF logo.jpg';
+import Educationimage2 from '../assets/images/Coupons png.jpg';
+
+import transportimage1 from '../assets/images/achinlink logo.jpg';
 const DealsSection = () => {
   const [activeCategory, setActiveCategory] = useState('All');
    const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -255,14 +291,14 @@ const DealsSection = () => {
     {
       id: 14,
        image: Resturantimage6,
-      title: "SATISFY YOUR CRAVINGS FOR LESS WITH FALAAA! FRIDAY PIZZA AT SHOCKS HUB",
-      description: 'Buy one get one Free! Enjoy dou...',
+      title: "Savor Love, Serve Flavor! Order from Krave & Fill and enjoy FREE Delivery on Lunch Baskets",
+      description: 'Savor Love, Serve Flavor! Order...',
       reviews: 0,
       likes: 0,
-      views: 1017,
-      date: 'Jun 14, 24',
-      comments: 50,
-      location: 'Cheezy Pizza, Accra Ghana',
+      views: 194,
+      date: ' Feb 01, 24',
+      comments: 160,
+      location: 'Krave & Fill,',
       status: 'Promo has ended',
      
     },
@@ -560,12 +596,423 @@ const DealsSection = () => {
       bgColor: 'bg-white',
     }
   ]
+  const Home = [
+     {
+      id: 34,
+      image: Homeimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Unmissable Savings at Boateng Ventures: Get Up to 40% Off!',
+      description: 'Boateng Ventures Mega Discoun...',
+       reviews: 0,
+       likes: 0,
+      views: 598,
+      date: 'Jul 10, 24',
+      comments: 50,
+      location: 'Boateng Ventures, Accra Ghana',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+     {
+      id: 35,
+      image: Homeimage2,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Get up to 30% discounts on our exclusive range of furniture at Alfemo Ghana Today!',
+      description: 'Discover the perfect furniture at...',
+       reviews: 0,
+       likes: 0,
+      views: 755,
+      date: 'Jun 04, 24',
+      comments: 20,
+      location: 'Alfemo Ghana, Accra Ghana',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+      id: 36,
+      image: Homeimage3,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'HURRY UP AND DON’T MISS THIS 10- DAY PROMO 30% off At Caretta Furniture!',
+      description: 'It is the Kwame Nkrumah Memor...',
+       reviews: 0,
+       likes: 0,
+      views: 861,
+      date: 'Jul 10, 24',
+      comments: 30,
+      location: 'Caretta Furniture, Accra Ghana',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+      id: 37,
+      image: Homeimage4,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Introducing our Executive Office Suites with an unbeatable 30% price slash at Ferri Home Design',
+      description: 'Introducing our Executive Office...',
+       reviews: 0,
+       likes: 0,
+      views: 646,
+      date: 'jul 30, 24',
+      comments: 20,
+      location: 'Ferri Home Design Ghana, Accra Ghana',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+  ]
+  const Services = [
+     {
+      id: 38,
+      image: Servicesimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: '"EGG CELLENT" EGG TRAY SALE PROMO AT SHINE DISPOSABLES',
+      description: 'Enjoy egg- ceptional discounts...',
+       reviews: 0,
+       likes: 0,
+      views: 665,
+      date: 'Feb 19, 24',
+      comments: 500,
+      location: 'SHINE DISPOSABLES BY GHANA RUBBER, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+     {
+      id: 39,
+      image: Servicesimage2,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Pamper Yourself at Mimi Skincare and Spa – Up to 40% Off!',
+      description: 'Unveil your best self with Mimi...',
+       reviews: 0,
+       likes: 0,
+      views: 927,
+      date: 'Aug 09, 24',
+      comments: 20,
+      location: 'Mimi Skincare and Spa, Accra Ghana',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },]
+const Electronics = [
+     {
+      id: 40,
+      image: Electronicsimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'UP TO 70% CLEARANCE SALES AT ELECTROLAND GHANA',
+      description: 'Freedom truly tastes better with ...',
+       reviews: 0,
+       likes: 0,
+      views: 642,
+      date: 'Mar 04, 24',
+      comments: 140,
+      location: 'Electroland GH, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+     {
+      id: 41,
+      image: Electronicsimage2,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'GHANA MONTH DISCOUNT PROMO AT TURF DEVICES',
+      description: 'This is a better time to upgrade ...',
+       reviews: 0,
+       likes: 0,
+      views: 669,
+      date: 'Mar 05, 24',
+      comments: 300,
+      location: 'TURFDEVICES, Labone',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+  ]
+ const Theater =[
+    {
+       id: 42,
+      image: Theaterimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Laugh your way to a tasty treat! Grab a 5kg bag of Evivi Rice with your Ramanus Incomplete ticket',
+      description: 'Every Ticket purchased for #Ro...',
+       reviews: 0,
+       likes: 0,
+      views: 563,
+      date: ' Dec 14, 23',
+      comments: 90,
+      location: 'Romanus Incomplete Comedy Show, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+       id: 43,
+      image: Theaterimage2,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'ELEVATE YOUR LIVING SPACES WITH STYLE AND SAVINGS WITH OUR 10% OFFER AT EXCEPTIONNEL FURNI CITY',
+      description: 'Dont miss the chance to redefin...',
+       reviews: 0,
+       likes: 0,
+      views: 596,
+      date: 'Feb 01, 24',
+      comments: 500,
+      location: 'EXCEPTIONNEL FURNI CITY, Dansoman-Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+     {
+       id: 44,
+      image: Theaterimage3,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Big screen entertainment, anywhere you go! Grab your Flick Smart Projector at 30% off now!!',
+      description: 'From home cinema to business...',
+       reviews: 0,
+       likes: 0,
+      views: 594,
+      date: 'Sep 10, 24',
+      comments: 30,
+      location: 'Flick Smart Projector, Accra Ghana',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+     {
+       id: 45,
+      image: Theaterimage4,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Films, music, & vibes! Join us at Silverbird Cinema on 20th Sept for SHORTS ON SHORTS!',
+      description: 'Ready for a night of cinematic ma...',
+       reviews: 0,
+       likes: 0,
+      views: 618,
+      date: 'Sep 10, 24',
+      comments: 20,
+      location: 'Silverbird Cinema , Accra Ghana',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    }
+    ]
+ const Health =[
+    {
+       id: 46,
+      image: Healthimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'REJUVENATE YOUR BODY AND SOUL WITH OUR SPECIAL MONTH OF LOVE OFFER AT NOVE SPA GHANA !',
+      description: 'Indulge in the ultimate spa escape...',
+       reviews: 0,
+       likes: 0,
+      views: 523,
+      date: ' Feb 14, 24',
+      comments: 300,
+      location: 'NOVA SPA GHANA, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+       id: 47,
+      image: Healthimage2,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Belzpalaz Hair Products Is Giving 5% Discount To Coupons Ghana Subscribers',
+      description: 'Want a hair product for rapid an...',
+       reviews: 0,
+       likes: 0,
+      views: 248,
+      date: 'Nov 04, 23',
+      comments: 178,
+      location: 'Belzpalaz Hair Product , Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+     {
+       id: 48,
+      image: Healthimage3,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'INDULGE YOUR SENSES WITH OUR UP TO 30% DISCOUNT AT GRACIAS HOME SPA!',
+      description: 'Enjoy significant discounts on a...',
+       reviews: 0,
+       likes: 0,
+      views: 827,
+      date: 'Feb 15, 24',
+      comments: 500,
+      location: 'GRACIAS HOME SPA, Haasto- Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    }
+    ]
+
+   const General =[
+    {
+       id: 49,
+      image: generalimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'ENJOY SIGNIFICANT MARKDOWN ON THE EXTENSIVE MEGA SALE AT REAL STEEL CO. LTD',
+      description: 'Dont miss out on this opportuni...',
+       reviews: 0,
+       likes: 0,
+      views: 530,
+      date: 'Feb 17, 24',
+      comments: 300,
+      location: 'REAL STEEL CO.LTD, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+       id: 50,
+      image: generalimage2,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'HEAT UP YOUR BATHROOM RENOVATION WITH HOT DEALS ON WCS AND SHOWER SET AT TILES MARKET',
+      description: 'Transform your bathroom into a...',
+       reviews: 0,
+       likes: 0,
+      views: 300,
+      date: 'Feb 19, 24',
+      comments: 683,
+      location: 'TILES MARKET GHANA, New bortianor, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    }
+    ]
+  const Tourism =[
+    {
+       id: 51,
+      image: Tourismimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: '15% OFF ALL ROOM BOOKINGS AT BREEZES BEACH RESORT',
+      description: '15% Exclusive discount for all Co...',
+       reviews: 0,
+       likes: 0,
+      views: 249,
+      date: 'Oct 22, 23',
+      comments: 500,
+      location: 'Breezes Beach Resort, Nationwide',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+       id: 52,
+      image: Tourismimage2,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'INDULGE IN LUXURY: ENJOY UP TO 30% & 40% OFF AT BOTH ROOTS HOTEL APARTMENT AND URBANO HOTEL',
+      description: 'Treat yourself to a getaway and...',
+       reviews: 0,
+       likes: 0,
+      views: 509,
+      date: 'Nov 09, 23',
+      comments:500,
+      location: 'Roots Hotel Apartment And Urbano Hotel, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+       id: 53,
+      image: Tourismimage3,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'ENJOY 10% OFF FOOD AND BEVERAGE PURCHASES AT SUNTAA RESORTs RESTAURANT! IN THIS MONTH OF LOVE',
+      description: 'Escape to culinary bliss and ind...',
+       reviews: 0,
+       likes: 0,
+      views: 175,
+      date: 'Feb 14, 24',
+      comments:300,
+      location: 'SUNTAA BEACH BOXX, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+       id: 54,
+      image: Tourismimage4,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'EXPERIENCE THE ULTIMATE RELAXATION WITH OUR EXTRAORDINARY 40% SPECIAL PROMO AT VOLTA HOTEL',
+      description: 'Book your stay now and treat yo...',
+       reviews: 0,
+       likes: 0,
+      views: 567,
+      date: 'Dec 21, 23',
+      comments:200,
+      location: 'VOLTA HOTEL AKOSOMBO, Akosombo Comm 1, Akosombo',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    }
+  ]
+  const Education =[
+    {
+       id: 54,
+      image: Educationimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: '75% Special Discount at NNF Enquire LTD',
+      description: '75% discount on all UK IGCSE,...',
+       reviews: 0,
+       likes: 0,
+      views: 250,
+      date: 'Oct 06, 23',
+      comments: 565,
+      location: 'NNF Esquire Ltd, Tema, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    },
+    {
+       id: 55,
+      image: Educationimage2,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Get 2 free online coding classes for kids from 7 to 17 in Ghana',
+      description: 'Visit geeklama.com and get 2 fr...',
+       reviews: 0,
+       likes: 0,
+      views: 1127,
+      date: 'May 11, 20',
+      comments:0,
+      location: 'Geeklama, Ghana',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    }
+  ]
+  const Transport =[
+    {
+       id: 56,
+      image: transportimage1,
+      logo: 'Aviation Social Centre',
+      discount: '25%',
+      title: 'Save 20% While You Learn Driving @ Achilinks Driving School',
+      description: 'Practical and Safe driving lessons...',
+       reviews: 0,
+       likes: 0,
+      views: 537,
+      date: 'Nov 21, 23',
+      comments: 50,
+      location: 'Achilinks Driving School, Accra',
+      status: 'Promo has ended',
+      bgColor: 'bg-white',
+    }
+  ]
  const dealsByCategory = {
     All: All,
     'Restaurants and Food Delivery': Restaurants,
     'Entertainment': Entertainment,
     'Sports and Fitness': Sports,
     'Clothing and Fashion': Clothing,
+    'Home Improvement': Home,
+    'Services': Services,
+    'Theater and Cinema': Theater,
+    'Gadgets and Electronics': Electronics,
+    'Health and Wellness': Health,
+    'General Merchandize': General,
+    'Tourism and Hospitality': Tourism,
+    'Education': Education,
+    'Transport': Transport,
 
   };
 

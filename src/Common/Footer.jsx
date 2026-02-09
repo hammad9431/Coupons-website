@@ -2,6 +2,8 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import logo from "../assets/images/favicon-953fd31a0e49f4b26d978f384765172be558d2f983b6fbfdf88956b35755ca1d.png"; // apna logo path
 import { CiFacebook ,CiTwitter  } from "react-icons/ci";
 import { FaInstagramSquare } from "react-icons/fa";
+import { BsFillSendFill } from "react-icons/bs";
+import { IoIosMailOpen } from "react-icons/io";
  function Footer() {
   return (
     <>
@@ -44,18 +46,18 @@ import { FaInstagramSquare } from "react-icons/fa";
             </p>
 
             {/* Social Icons */}
-            <div className="flex -mt-2 lg:text-3xl xl:text-3xl text-3xl md:text-xl xl:px-8 gap-4 mx-auto md:mx-0">
+            <div className="border flex -mt-2 lg:text-3xl xl:text-3xl text-3xl md:text-xl xl:px-4 gap-4 mx-auto md:mx-0">
               <span className="text-gray-600 hover:text-[#1877F2] cursor-pointer transition-colors">
                 <FaFacebookF />
               </span>
               <span className="text-gray-600 hover:text-[#1DA1F2] cursor-pointer transition-colors">
                 <FaTwitter />
               </span>
-              <span className="text-gray-600 hover:text-[#E4405F] cursor-pointer transition-colors">
-                <FaInstagram />
+              <span className="text-gray-600 hover:text-[#1DA1F2] cursor-pointer transition-colors">
+                <BsFillSendFill  />
               </span>
                <span className="text-gray-600 hover:text-[#1DA1F2] cursor-pointer transition-colors">
-                <FaTwitter />
+                <IoIosMailOpen  />
               </span>
                <span className="text-gray-600 hover:text-[#E4405F] cursor-pointer transition-colors">
                 <FaInstagram />
