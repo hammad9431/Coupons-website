@@ -575,7 +575,7 @@ const DealsSection = () => {
   const DealCard = ({ deal }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl border border-transparent hover:border-blue-600 cursor-pointer my-4 hover:-translate-y-1 h-auto flex flex-col">
 
-      <img src={deal.image} alt={deal.title} className="h-48 w-auto object-cover " />
+      <img src={deal.image} alt={deal.title} className="h-48 w-auto object-cover shadow-md" />
       <div className="p-4 flex flex-col grow">
         <h3
           className="text-blue-700 font-bold mb-2 cursor-pointer"
@@ -643,7 +643,7 @@ const DealsSection = () => {
      
       <div className="bg-white shadow-sm w-full ">
        <div className="max-w-7xl mx-auto py-6 flex flex-row md:flex-col items-center md:items-start justify-between">
-  <h1 className="lg:text-3xl text-xl px-3 lg:px-10 md:px-8 xl:px-0 font-bold text-gray-800 mb-1 text-left">
+  <h1 className="lg:text-3xl text-lg px-3 lg:px-10 md:px-8 xl:px-0 font-bold text-gray-800 mb-1 text-left">
     Today's Most Claimed Deals
   </h1>
 
@@ -692,9 +692,9 @@ const DealsSection = () => {
             <div className="overflow-y-auto max-h-[calc(80vh-80px)] bg-blue-600">
               <button
                 onClick={() => setIsFilterOpen(false)}
-                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                className="p-2 hover:bg-gray-100 rounded-lg transition-colors top-0 "
               >
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="top-0  w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>

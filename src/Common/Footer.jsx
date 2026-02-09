@@ -39,7 +39,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 
           <div className="flex flex-col  md:items-start gap-2 ">
             <img src={logo} alt="logo" className="w-48 mx-auto lg:mx-0" />
-            <p className="text-blue-600 xl:text-lg lg:text-[15px] md:text-[11px] font-medium lg:text-center md:text-left">
+            <p className="mx-auto lg:mx-0 md:mx-0 xl:mx-0 text-blue-600 xl:text-lg lg:text-[15px] md:text-[11px] font-medium lg:text-center md:text-left">
               Ghana's Premier Coupons Club
             </p>
 
