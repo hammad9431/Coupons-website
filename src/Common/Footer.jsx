@@ -7,9 +7,9 @@ import { IoIosMailOpen } from "react-icons/io";
  function Footer() {
   return (
     <>
-    <footer className="bg-white mx-4 shadow-sm">
-<div className="flex py-8 justify-between">
-   <ul className=" lg:gap-6 xl:gap-6 md:gap-3 xl:text-lg lg:text-lg md:text-[17px] md:mt-2 text-gray-800 px-8 hidden md:inline-flex ">
+    <footer className="bg-white mx-6 shadow-2xl ">
+<div className="flex py-10 justify-between">
+   <ul className="font-normal lg:gap-6 xl:gap-6 md:gap-3 xl:text-lg lg:text-lg md:text-[17px] md:mt-2 text-gray-800 px-8 hidden md:inline-flex ">
 
               {/* CATEGORIES */}
               <li className="cursor-pointer hover:text-blue-600 ">Home</li>
@@ -36,7 +36,7 @@ import { IoIosMailOpen } from "react-icons/io";
     <div className=" border-t border-blue-400 mx-8">
       <div className="max-w-7xl mx-auto lg:px-6 xl:px-6 py-10">
 
-        {/* Top Section */}
+        
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
 
           <div className="flex flex-col  md:items-start gap-2 ">
@@ -67,8 +67,8 @@ import { IoIosMailOpen } from "react-icons/io";
 
           {/* Vendors */}
           <div className="text-center md:text-left">
-            <h3 className="font-semibold mb-3">Vendors</h3>
-            <ul className="space-y-2 text-gray-600 text-sm cursor-pointer ">
+            <h1 className="font-semibold mb-3">Vendors</h1>
+            <ul className="space-y-2 text-gray-600 text-md cursor-pointer ">
               <li className="hover:text-blue-600 transition-colors">Add a Place</li>
               <li className="hover:text-blue-600 transition-colors">Create a Promo</li>
               <li className="hover:text-blue-600 transition-colors">Add an Event</li>
@@ -104,7 +104,7 @@ import { IoIosMailOpen } from "react-icons/io";
         </div>
 
         {/* Bottom */}
-        <div className=" mt-10 pt-4 text-center text-lg text-gray-500">
+        <div className=" mt-10 pt-4 text-center text-md text-gray-500">
           All trademarks are properties of their respective owners.
           © 2023 Coupons Technologies, All Rights Reserved.
         </div>
