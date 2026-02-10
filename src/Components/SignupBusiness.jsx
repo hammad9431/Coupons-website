@@ -54,10 +54,18 @@ function SignupBusiness() {
           <label>Remember me</label>
         </div>
 
-        <button className="w-full bg-blue-600 text-white py-3 rounded-md">
+        <button className="w-full bg-blue-600 text-white py-2 rounded-md
+        hover:text-blue-600 hover:border border-blue-600 hover:bg-white cursor-pointer">
           Register Vendor Now
         </button>
-
+ <hr className="my-4 text-gray-400" />
+ <p className="text-center text-sm text-gray-500">
+            <span className="text-red-400 cursor-pointer hover:text-red-600">
+              Already signed-up as a vendor? Sign in here
+            </span>
+          </p>
+           <p className="text-center text-sm text-gray-400 cursor-pointer hover:text-blue-700">
+          Didn't receive your account confirmation instructions? Click here          </p>
       </div>
     </div>
   </div>

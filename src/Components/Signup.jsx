@@ -1,5 +1,5 @@
 
-
+import { CiFacebook,CiTwitter   } from "react-icons/ci";
 
     function Signup() {
   return (
@@ -51,12 +51,12 @@
           </div>
 
           {/* Signup Button */}
-          <button className="w-full bg-blue-600 text-white py-3 rounded-md font-medium hover:bg-blue-700 transition">
+          <button className="w-full bg-blue-600 text-white py-3 rounded-md font-medium hover:bg-white hover:border border-blue-700 hover:text-blue-700 transition cursor-pointer">
             Sign Up Now
           </button>
 
           {/* Divider */}
-          <hr className="my-4" />
+          <hr className="my-4 text-gray-400" />
 
           <p className="text-center text-sm text-gray-500">
             <span className="text-red-500 cursor-pointer">
@@ -64,20 +64,44 @@
             </span>
           </p>
 
-          <p className="text-center text-xs text-gray-400">
+          <p className="text-center text-sm text-gray-400 cursor-pointer hover:text-blue-700">
             Didn't receive your account confirmation instructions? Click here
           </p>
 
-          <hr className="my-4" />
+          <hr className="my-4 text-gray-400" />
 
           {/* Social Buttons */}
-          <button className="w-full bg-blue-800 text-white py-3 rounded-md font-medium hover:bg-blue-900 transition">
-            Sign in with Facebook
-          </button>
+         <button className="w-full bg-blue-800 text-white py-3 rounded-md font-medium transition 
+           flex items-center justify-center gap-2 cursor-pointer 
+           hover:bg-white group">
+  <CiFacebook className="text-xl transition-colors group-hover:text-blue-700" />
+   <span className="transition-colors group-hover:text-blue-700">
+    Sign in with Facebook
+  </span>
+</button>
 
-          <button className="w-full border border-blue-600 text-blue-600 py-3 rounded-md font-medium hover:bg-blue-50 transition">
+<button className="w-full bg-blue-500 text-white py-3 rounded-md font-medium transition 
+           flex items-center justify-center gap-2 cursor-pointer hover:border border-blue-600
+           hover:bg-white group">
+  <CiTwitter className="text-xl transition-colors group-hover:text-blue-700" />
+   <span className="transition-colors group-hover:text-blue-700">
+    Sign in with Twitter
+  </span>
+</button>
+         {/* <button className="w-full bg-blue-500 hover:bg-white hover:border border-blue-600  py-3 rounded-md font-medium transition 
+           flex items-center justify-center gap-2 cursor-pointer text-white 
+           ">
+  <CiTwitter className="text-xl transition-colors group-hover:text-blue-700" />
+   <span className=" transition-colors hover:text-blue-700">
+    Sign in with Twitter
+  </span>
+</button> */}
+
+
+
+          {/* <button className="w-full border border-blue-600 text-blue-600 py-3 rounded-md font-medium hover:bg-blue-50 transition">
             Sign in with Twitter
-          </button>
+          </button> */}
 
         </div>
       </div>
